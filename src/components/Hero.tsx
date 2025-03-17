@@ -30,7 +30,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 animate-fade-in" style={{
             animationDelay: "0.2s"
           }}>
-              <a href="#register" className="bg-hackathon-purple hover:bg-hackathon-purple/90 text-white px-8 py-3 rounded-full font-medium text-lg shadow-lg shadow-hackathon-purple/20 transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-purple/30 hover:translate-y-[-2px]">
+              <a href="https://unstop.com/competitions/race-to-innovate-geekmayhem-2025-nitte-meenakshi-institute-of-technology-nmit-yelahanka-1422546" className="bg-hackathon-purple hover:bg-hackathon-purple/90 text-white px-8 py-3 rounded-full font-medium text-lg shadow-lg shadow-hackathon-purple/20 transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-purple/30 hover:translate-y-[-2px]">
                 Register Now
               </a>
               <a href="#about" className="bg-transparent text-hackathon-black border border-hackathon-black/20 hover:border-hackathon-black/40 px-8 py-3 rounded-full font-medium text-lg transition-all duration-300 hover:shadow-md">
