@@ -57,7 +57,7 @@ const CountdownTimer = ({
               {unit.value.toString().padStart(2, '0')}
             </span>
           </div>
-          <span className="text-xs md:text-sm mt-2 font-medium text-gray-50">
+          <span className="text-xs md:text-sm mt-2 font-medium text-black">
             {unit.label}
           </span>
         </div>)}
