@@ -56,7 +56,7 @@ const Hero = () => {
           <div className="flex-1 w-full max-w-md animate-fade-in" style={{
           animationDelay: "0.6s"
         }}>
-            <div className="glass-dark p-6 rounded-2xl shadow-2xl border border-white/10 backdrop-blur-xl bg-gray-950">
+            <div className="glass-dark p-6 rounded-2xl shadow-2xl border border-white/10 backdrop-blur-xl bg-black/0">
               <h3 className="text-xl font-semibold text-white mb-6 text-center">Final Round Begins In</h3>
               <CountdownTimer targetDate={finalRoundDate} className="mb-6" />
               <div className="p-4 rounded-xl text-white text-sm bg-[s] bg-[#7700ff]">
