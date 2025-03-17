@@ -1,12 +1,48 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from 'react';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Timeline from '@/components/Timeline';
+import Prizes from '@/components/Prizes';
+import WhyParticipate from '@/components/WhyParticipate';
+import Footer from '@/components/Footer';
 
 const Index = () => {
+  useEffect(() => {
+    // Intersection Observer for section animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll('.section-transition').forEach(section => {
+      observer.observe(section);
+    });
+
+    return () => {
+      document.querySelectorAll('.section-transition').forEach(section => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <Hero />
+      <About />
+      <Timeline />
+      <Prizes />
+      <WhyParticipate />
+      <Footer />
     </div>
   );
 };
