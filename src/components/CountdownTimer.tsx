@@ -52,7 +52,7 @@ const CountdownTimer = ({
   }];
   return <div className={cn('grid grid-cols-4 gap-2 md:gap-4', className)}>
       {timeUnits.map((unit, index) => <div key={unit.label} className="flex flex-col items-center justify-center">
-          <div className="glass p-2 md:p-3 w-full aspect-square flex items-center justify-center rounded-lg shadow-md border border-white/20 bg-[zinc-] bg-[#40e0d0]">
+          <div className="glass p-2 md:p-3 w-full aspect-square flex items-center justify-center rounded-lg shadow-md border border-white/20 bg-[zinc-] bg-[#aff6ee]">
             <span className="text-xl md:text-3xl lg:text-4xl font-mono font-bold text-hackathon-black">
               {unit.value.toString().padStart(2, '0')}
             </span>
