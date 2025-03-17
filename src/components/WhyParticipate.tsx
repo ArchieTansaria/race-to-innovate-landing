@@ -83,7 +83,7 @@ const WhyParticipate = () => {
                   
                   <div className="flex flex-col items-center">
                     <a 
-                      href="#register" 
+                      href="https://unstop.com/competitions/race-to-innovate-geekmayhem-2025-nitte-meenakshi-institute-of-technology-nmit-yelahanka-1422546" 
                       id="register"
                       className="bg-hackathon-aqua hover:bg-hackathon-aqua/90 text-hackathon-black font-medium rounded-full px-8 py-3 text-lg shadow-lg shadow-hackathon-aqua/20 transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-aqua/30 transform hover:-translate-y-1"
                     >
