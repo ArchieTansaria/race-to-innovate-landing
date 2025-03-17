@@ -1,18 +1,12 @@
-
 import React from 'react';
 import SectionHeading from './SectionHeading';
 import AnimatedReveal from './AnimatedReveal';
 import { Award, Trophy, Medal } from 'lucide-react';
-
 const Prizes = () => {
-  return (
-    <section id="prizes" className="py-20 px-4">
+  return <section id="prizes" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <AnimatedReveal>
-          <SectionHeading 
-            title="Prize Pool"
-            description="Compete for exciting rewards and recognition"
-          />
+          <SectionHeading title="Prize Pool" description="Compete for exciting rewards and recognition" />
         </AnimatedReveal>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 mt-12">
@@ -71,35 +65,10 @@ const Prizes = () => {
         
         <AnimatedReveal delay={300}>
           <div className="mt-16 text-center">
-            <div className="glass rounded-xl p-6 md:p-8 max-w-2xl mx-auto">
-              <h3 className="text-xl font-semibold mb-4">Participation Benefits</h3>
-              <p className="text-gray-600 mb-4">
-                All participants will receive:
-              </p>
-              <ul className="space-y-3 text-gray-600 text-left inline-block">
-                <li className="flex items-center">
-                  <span className="inline-block w-2 h-2 bg-hackathon-purple rounded-full mr-2"></span>
-                  <span>Certificate of Participation</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-2 h-2 bg-hackathon-aqua rounded-full mr-2"></span>
-                  <span>Networking opportunities with industry professionals</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-2 h-2 bg-hackathon-purple rounded-full mr-2"></span>
-                  <span>Chance to showcase skills to potential employers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-2 h-2 bg-hackathon-aqua rounded-full mr-2"></span>
-                  <span>Valuable experience solving real-world design challenges</span>
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </AnimatedReveal>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Prizes;
