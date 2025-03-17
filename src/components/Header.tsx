@@ -40,7 +40,7 @@ const Header = () => {
           </nav>
           <div>
             <a 
-              href="#register"
+              href="https://unstop.com/competitions/race-to-innovate-geekmayhem-2025-nitte-meenakshi-institute-of-technology-nmit-yelahanka-1422546"
               className="bg-hackathon-purple hover:bg-hackathon-purple/90 text-white font-medium rounded-full px-5 py-2 text-sm transition-all duration-300 hover:shadow-lg hover:shadow-hackathon-purple/20"
             >
               Register Now
