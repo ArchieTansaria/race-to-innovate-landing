@@ -1,13 +1,9 @@
-
 import React from 'react';
 import CountdownTimer from './CountdownTimer';
-
 const Hero = () => {
   // Target date for the final offline round
   const finalRoundDate = new Date('April 4, 2025 13:00:00 GMT+0530');
-
-  return (
-    <section className="min-h-screen pt-28 pb-16 px-4 flex items-center justify-center relative overflow-hidden">
+  return <section className="min-h-screen pt-28 pb-16 px-4 flex items-center justify-center relative overflow-hidden">
       {/* Abstract background elements */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-1/4 -right-28 w-96 h-96 bg-hackathon-aqua/10 rounded-full blur-3xl"></div>
@@ -31,22 +27,20 @@ const Hero = () => {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <a 
-                href="#register" 
-                className="bg-hackathon-purple hover:bg-hackathon-purple/90 text-white px-8 py-3 rounded-full font-medium text-lg shadow-lg shadow-hackathon-purple/20 transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-purple/30 hover:translate-y-[-2px]"
-              >
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 animate-fade-in" style={{
+            animationDelay: "0.2s"
+          }}>
+              <a href="#register" className="bg-hackathon-purple hover:bg-hackathon-purple/90 text-white px-8 py-3 rounded-full font-medium text-lg shadow-lg shadow-hackathon-purple/20 transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-purple/30 hover:translate-y-[-2px]">
                 Register Now
               </a>
-              <a 
-                href="#about" 
-                className="bg-transparent text-hackathon-black border border-hackathon-black/20 hover:border-hackathon-black/40 px-8 py-3 rounded-full font-medium text-lg transition-all duration-300 hover:shadow-md"
-              >
+              <a href="#about" className="bg-transparent text-hackathon-black border border-hackathon-black/20 hover:border-hackathon-black/40 px-8 py-3 rounded-full font-medium text-lg transition-all duration-300 hover:shadow-md">
                 Learn More
               </a>
             </div>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 pt-6 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 pt-6 animate-fade-in" style={{
+            animationDelay: "0.4s"
+          }}>
               <div className="flex flex-col items-center sm:items-start">
                 <span className="text-sm text-gray-500 mb-1">Venue</span>
                 <span className="font-medium">NMIT, Bengaluru, Karnataka</span>
@@ -59,14 +53,13 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="flex-1 w-full max-w-md animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            <div className="glass-dark p-6 rounded-2xl shadow-2xl border border-white/10 backdrop-blur-xl">
+          <div className="flex-1 w-full max-w-md animate-fade-in" style={{
+          animationDelay: "0.6s"
+        }}>
+            <div className="glass-dark p-6 rounded-2xl shadow-2xl border border-white/10 backdrop-blur-xl bg-gray-950">
               <h3 className="text-xl font-semibold text-white mb-6 text-center">Final Round Begins In</h3>
-              <CountdownTimer 
-                targetDate={finalRoundDate} 
-                className="mb-6" 
-              />
-              <div className="bg-hackathon-purple/20 p-4 rounded-xl text-white text-sm">
+              <CountdownTimer targetDate={finalRoundDate} className="mb-6" />
+              <div className="p-4 rounded-xl text-white text-sm bg-[s] bg-[#7700ff]">
                 <h4 className="font-semibold mb-2">Shortlisting Round is Live!</h4>
                 <p className="opacity-80">
                   Submit your entry via Unstop before March 23, 2025, 11:59 PM IST to qualify for the finals.
@@ -76,8 +69,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
